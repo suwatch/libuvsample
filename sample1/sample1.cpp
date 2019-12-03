@@ -83,7 +83,7 @@ static void after_read(uv_stream_t* handle,
         return;
     }
 
-    fprintf(stdout, "data read: %llu bytes\n", nread); // / 1024 / 1024);
+    fprintf(stdout, "data read: %Iu bytes\n", nread); // / 1024 / 1024);
 
     data_cntr += nread;
 
